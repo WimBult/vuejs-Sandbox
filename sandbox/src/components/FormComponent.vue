@@ -19,10 +19,13 @@ export default class FormComponent extends Vue {
 <template>
     <div id="form">
   <form>
-    hallo
-    <label class="form-text">Name: <input v-model="name"></label>
-    <label class="form-text">Email: <input v-model="email"></label>
-    <label class="form-text"> Text: <textarea rows="10" class="form-text"></textarea></label>
+    <label class="form-text">Name: </label>
+      <input class="FormName"  v-model="name">
+    <label class="form-text">Email:</label>
+     <input class="FormEmail" v-model="email">
+    <label class="form-text"> Text: </label>
+    <textarea rows="10" class="FormTextbox"></textarea>
+    <button class="VerzendButton"> Verzenden</button>
   </form>
 </div>
 </template>
@@ -32,12 +35,23 @@ export default class FormComponent extends Vue {
 #form {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
 }
 .form-text {
     display: flex;
     align-content: center;
     width:100% ;
+}
+input { 
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+textarea {
+  border: 1px solid black;
+  margin: auto;
+}
+.VerzendButton {
+  display: flex;
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
-<FormComponent/>
+
+  <div class="PageComponentBox">
     <NewComponent/>
-    
+    <FormComponent/>
+  </div>
     
   </template>
 
@@ -17,9 +19,10 @@ import FormComponent from './FormComponent.vue'
 })
 export default class App extends Vue {}
 
-
-
-
-
-
 </script>
+
+<style scoped>
+.PageComponentBox {
+  display: flex;
+}
+</style>

@@ -13,8 +13,8 @@ export default class NewComponent extends Vue {
 
 </script>
 
-<template class="templateClass">
-
+<template>
+<div class="Listing-Box">
     <div class="component-listing">
         <img class='component-logo' alt="Vue logo" src="../assets/logo.png">
         <h1 class="component-title">A New Component</h1>
@@ -27,16 +27,16 @@ export default class NewComponent extends Vue {
         <img class='component-logo' alt="Vue logo" src="../assets/logo.png">
         <h1 class="component-title">A New Component</h1>
    </div>
-   
+  </div>
 </template>
 
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.TemplateClass {
-  Width: 50%;
+.Listing-Box {
+  width: 100%;
 }
 .component-listing {
-    width: 50%;
+    width: 100%;
     border: 1px solid black;
     display: flex;
     margin-left: 0px;
