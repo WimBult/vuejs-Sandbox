@@ -1,16 +1,20 @@
 <template>
 
   <Home msg="Welkom bij mijn sandbox page"/>
-  <NewComponent />
+
+  <PageBox />
+
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import Home from './components/Home.vue';
 import NewComponent from './components/NewComponent.vue'
+import FormComponent from './components/FormComponent.vue'
+import PageBox from './components/PageBox.vue'
 @Options({
   components: {
- Home, NewComponent, 
+ Home, NewComponent, FormComponent, PageBox,
   },
 })
 export default class App extends Vue {}

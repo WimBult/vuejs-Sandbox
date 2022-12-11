@@ -8,15 +8,12 @@ import { Options, Vue } from 'vue-class-component';
 })
 export default class NewComponent extends Vue {
   msg!: string
-  name!: string
-  email!: string
-  text!: string
 }
 
 
 </script>
 
-<template>
+<template class="templateClass">
 
     <div class="component-listing">
         <img class='component-logo' alt="Vue logo" src="../assets/logo.png">
@@ -31,20 +28,15 @@ export default class NewComponent extends Vue {
         <h1 class="component-title">A New Component</h1>
    </div>
    
-<div id="form">
-  <form>
-    <label class="form-text">Name: <input v-model="name"></label>
-    <label class="form-text">Email: <input v-model="email"></label>
-    <label class="form-text"> Text: <textarea rows="10" class="form-text"></textarea></label>
-  </form>
-</div>
-
 </template>
 
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.TemplateClass {
+  Width: 50%;
+}
 .component-listing {
-    width: 45%;
+    width: 50%;
     border: 1px solid black;
     display: flex;
     margin-left: 0px;
@@ -67,17 +59,7 @@ export default class NewComponent extends Vue {
     width: 100%;
     top: 50px;
 }
-#form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.form-text {
-    display: flex;
-    align-content: center;
-    margin: auto;
-    width:100% ;
-}
+
 </style>
 
 
