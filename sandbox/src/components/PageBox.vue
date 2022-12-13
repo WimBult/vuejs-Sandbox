@@ -24,5 +24,6 @@ export default class App extends Vue {}
 <style scoped>
 .PageComponentBox {
   display: flex;
+  margin-top: 50px;
 }
 </style>

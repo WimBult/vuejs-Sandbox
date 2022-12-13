@@ -33,16 +33,21 @@ export default class NewComponent extends Vue {
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .Listing-Box {
-  width: 100%;
+  width: 50%;
+  margin-right:5%;
 }
 .component-listing {
     width: 100%;
     border: 1px solid black;
     display: flex;
-    margin-left: 0px;
+    margin-left: 10%;
     margin-bottom: 10px;
-    border-radius: 15px;
+    border-radius: 15px;    
 }
+  .component-listing:last-child{
+  margin-bottom:0px!important;
+  } 
+
 .component-title {  
     width: 100%;
 }
