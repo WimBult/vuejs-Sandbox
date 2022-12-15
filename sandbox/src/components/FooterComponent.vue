@@ -30,10 +30,9 @@ export default class FooterComponent extends Vue {
     margin-top: 100px;
     border-top: 1px solid black;
     background-color: #34eb80;
-    max-height: 100px; 
-    min-height: 100px;
+    max-height: 50px; 
+    min-height: 50px;
     bottom: 0px;
-    position: fixed;
     display:flex; 
     flex-direction:column; 
     justify-content:space-between;

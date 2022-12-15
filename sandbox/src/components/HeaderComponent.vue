@@ -53,7 +53,7 @@ export default class HeaderComponent extends Vue {
     display:flex;
     flex-direction: row;
     margin:auto;
-    margin-right: 5% !important;
+    margin-right: 10% !important;
 }
 a {
     font-size: 28px;
