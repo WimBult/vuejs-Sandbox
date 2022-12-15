@@ -1,7 +1,7 @@
 <template>
   <HeaderComponent />
 
-  <Home msg="Sandbox Page"/>
+  <Home class="pagina_titel" msg="Sandbox Page"/>
 
   <PageBox />
 
@@ -40,5 +40,11 @@ export default class App extends Vue {}
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.pagina_titel {
+  margin-top: 200px;
+}
+body {
+  margin: 0px !important;
 }
 </style>

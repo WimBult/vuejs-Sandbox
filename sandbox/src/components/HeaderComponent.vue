@@ -6,7 +6,7 @@ import { Options, Vue } from 'vue-class-component';
     msg: String
   }
 })
-export default class NewComponent extends Vue {
+export default class HeaderComponent extends Vue {
   msg!: string
 }
 
@@ -15,7 +15,7 @@ export default class NewComponent extends Vue {
 <template>
 
     <div class="headerBox">
-        <img class='headerLogo' alt="Vue logo" src="../assets/logo.png" />
+        <img class='headerLogo' alt="Vue logo" src="../assets/logo_black.png" />
         <div class="headerNavBar">
         <a href="https://www.horizoncollege.nl/">School</a>
         <a href="http://126086.ao-alkmaar.nl/">Opdrachten</a>
@@ -33,13 +33,21 @@ export default class NewComponent extends Vue {
 .headerBox{
     background-color: white;
     border-bottom: 1px solid black;
-    width: 100%;
+    width: 110%;
     display: flex;
+    max-height: 20%;
+    background-color: #34eb80;
+    position: fixed;
+    top: 0;
+    margin-bottom: 200px;
+
 }
 .headerLogo {
     display: flex;
-    margin-left: 5%;
-    margin-bottom: 1%;
+    margin-left: 4%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 75px;
 }
 .headerNavBar {
     display:flex;

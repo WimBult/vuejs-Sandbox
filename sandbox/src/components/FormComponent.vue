@@ -1,5 +1,6 @@
-<script lang="ts">
+<script lang="ts" type="text/javascript">
 import { Options, Vue } from 'vue-class-component';
+
 
 @Options({
   props: {
@@ -8,14 +9,24 @@ import { Options, Vue } from 'vue-class-component';
 })
 
 export default class FormComponent extends Vue {
-  msg!: string
   name!: string
   email!: string
   text!: string
+  
+  }
+ /* methods:{
+  myFunction:function() {
 
-}
+  }
+  }
+*/
+
+
+
 
 </script>
+
+
 
 <template>
     <div id="form">
@@ -25,9 +36,9 @@ export default class FormComponent extends Vue {
       <input class="FormName"  v-model="name">
     <label class="form-text">Email:</label>
      <input class="FormEmail" v-model="email">
-    <label class="form-text"> Text: </label>
-    <textarea rows="10" class="FormTextbox"></textarea>
-    <button class="VerzendButton"> Verzenden</button>
+    <label class="form-text" > Text: </label>
+    <textarea rows="10" class="FormTextbox" v-model="text"></textarea>
+    <button v:onclick="myFunction" class="VerzendButton"> Verzenden</button>
   </form>
 </div>
 
@@ -46,13 +57,11 @@ export default class FormComponent extends Vue {
     border-radius: 15px;
     margin-left:5%;
     margin-right: 5%;
-    padding-top: 10%;
-    
+    padding-top: 5%;        
 }
 .formTitle {
   font-size: 24px;
-  margin-bottom: 5px;
-  
+  margin-bottom: 10px;
 }
 .form-text {
     display: flex;
@@ -77,6 +86,7 @@ textarea {
   color: black;
   background-color: white;
   border-radius: 15px;
+  font-size: 25px;
 }
 .VerzendButton:hover {
   background-color: #348ceb;
