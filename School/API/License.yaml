@@ -1,0 +1,16 @@
+resources:
+    KeyVue\Application\Command\License\CreateLicenseCommand:
+        collectionOperations:
+            post:
+                path: /license
+                messenger: 'input'
+                input: 'KeyVue\Application\Command\License\CreateLicenseCommand'
+                output: false
+
+    KeyVue\Application\Command\License\UpdateLicenseCommand:
+        collectionOperations:
+            post:
+                path: /license/update
+                messenger: 'input'
+                input: 'KeyVue\Application\Command\License\UpdateLicenseCommand'
+                output: false
